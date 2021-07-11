@@ -1,0 +1,435 @@
+<!DOCTYPE html>     <!----- definición de html 5 -->          
+<html lang="es"> 	<!----- definición del lenguaje -->  
+					<!------Inicio del  HEAD -->
+<head>
+  <title>Clases de Ingles Particulares</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+	<!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom --> 
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+	<!----- icono para apple y safari --> 
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Favicon.png">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- iconos  -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+	    <!-- tipo de letra -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+		<!-- carga CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-dark shadow d-flex ">
+	
+        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+        navbar-light = texto negro de la letra
+        bg-white = fondo de color blanco
+        -->
+    
+            <div class="container-fluid d-flex justify-content-between" >
+            
+                <a class="navbar-brand" href="index.html">
+                <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->	
+                        
+                        <img src="./assets/img/logo300x300.png" alt="logo" width="60" class="logo"  >
+                        
+                    <!--	bx bx-buildings = icono del logo de la web: 
+                    http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+                    https://boxicons.com/
+                    -->
+                    
+                    <span class="text-dark h7 marca align-middle pl-md-5 ml-md-5 "> <b> Business &</b> </span>
+               <span class="text-light h7 marca2 align-middle pl-md-5"> <b>Travel English</b> </span></a>
+                    
+                <!--	boton de hamburguesa --> 
+                    <button class="navbar-toggler" 
+                    type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbar-toggler-success" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+            <!------------------------------------------- Opciones del Menu		-->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" 
+            id="navbar-toggler-success">
+            
+            <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+            por un punto de interrupción principal.
+            flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+            d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+            directos en elementos flexibles
+            -->
+                            <div class="flex-fill mb-2 ">
+                    <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                            <ul class="nav navbar-nav d-flex justify-content-evenly  text-dark fs-5">
+                        <!--   .navbar-nav para una navegación ligera y de altura completa 
+                           (incluida la compatibilidad con menús desplegables).-->
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-secondary text-light  rounded-pill" href="index.html">Inicio</a>
+                            <!-- px = padding y mx es el margin 
+                            rounded-pill =genera ese boton con bordes redondeados rounded-circle-->	
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-secondary text-light rounded-pill" href="work.html"> Modalidades </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-secondary text-light  rounded-pill " href="pricing.html">Nuestros Estudiantes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-secondary text-light rounded-pill"  href="about.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-secondary text-light  rounded-pill" href="contact.html">Contactanos</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+    <!---------------------------------------------------------Fin de las opciones del menu
+    ------------------------------------------------------------ Inicio de los iconos del menu-->
+                    <div class="navbar align-self-center d-flex">
+                        <a class="nav-link" href="#"><i class='bx bx-cart-alt bx-sm text-light bx-burst-hover' ></i></a>
+                        <a class="nav-link" href="#"><i class='bx bxs-bell-ring bx-sm bx-tada-hover text-light'></i></a>
+                        <a class="nav-link" href="#"><i class='bx bxs-user-rectangle bx-sm text-light bx-spin-hover'></i></a>
+                        <a class="nav-link" href="#"><i class='bx bx-help-circle bx-flashing-hover bx-sm text-light' ></i></a>
+                        
+                        
+                       
+                        <!--	https://iconify.design/icon-sets/bx/-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    <!-- Close Header -->
+
+
+    <!-- Start Banner Hero -->
+    <div id="work_banner" class="banner-wrapper bg-light w-100 py-5 ">
+        <div class="banner-vertical-center-work container text-light d-flex justify-content-center align-items-center py-5 p-0">
+            <div class="banner-content col-lg-8 col-12 m-lg-auto text-center">
+                <h1 class="banner-heading display-2 pb-5 semi-bold-600 typo-space-line-center"> Modalidades del Curso</h1>
+                <h3 class="h4 pb-2 regular-400"></h3>
+                <p class="banner-body pb-2 light-300 fw-bold fs-4">
+                                        Cursos a Distancia Grupales e Individuales, Cursos Presenciales,
+                </p>
+               <a href="contact.html"><button type="submit" class="btn rounded-pill btn-outline-light px-4 me-4 light-300">Consultas</button></a>
+             <a href="about.html"><button type="submit" class="btn rounded-pill btn-secondary text-light px-4 light-300">Quienes Somos</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner Hero -->
+
+    <!-- Start Our Work -->
+    <section class="container py-5">
+        <div class="row justify-content-center my-5">
+            <div class="filter-btns shadow-md rounded-pill text-center col-auto">
+                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4 active" data-filter=".project" href="#">Todos</a>
+                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".business" href="#">Negocios</a>
+                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".marketing" href="#">Marketing</a>
+                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".social" href="#">Redes Sociales</a>
+                <a class="filter-btn btn rounded-pill btn-outline-primary border-0 m-md-2 px-md-4" data-filter=".graphic" href="#">Grafica</a>
+            </div>
+        </div>
+
+        <div class="row projects gx-lg-5">
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project marketing social business">
+                <div class="service-work overflow-hidden card mb-5 mx-5 m-sm-0">
+                    <img class="card-img-top" src="./assets/img/our-work-01.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Marketing Digital</h5>
+                        <p class="card-text light-300 text-dark">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolor.
+                        </p>
+                        <span class="text-decoration-none text-primary light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project graphic social">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/our-work-02.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Branding</h5>
+                        <p class="card-text light-300 text-dark">
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <span class="text-decoration-none text-primary light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project marketing graphic business">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/our-work-03.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Ventas Digitales</h5>
+                        <p class="card-text light-300 text-dark">
+                            Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse cillum dolore eu fugiatdolore eu fugiat nulla pariatur.
+                        </p>
+                        <span class="text-decoration-none text-primary light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project social business">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/our-work-04.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Aplicaciones</h5>
+                        <p class="card-text light-300 text-dark">
+                            Excepteur sint occaecat cupidatat non proident, sunt in
+                            culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <span class="text-decoration-none text-primary light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="col-sm-6 col-lg-4 text-decoration-none project marketing">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/our-work-05.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Mercado BtoB</h5>
+                        <p class="card-text light-300 text-dark">
+                            Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <span class="text-decoration-none text-primary light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+            <a href="" class="col-sm-6 col-lg-4 text-decoration-none project marketing graphic">
+                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+                    <img class="card-img-top" src="./assets/img/our-work-06.jpg" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark">Tips Financieros</h5>
+                        <p class="card-text light-300 text-dark">
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <span class="text-decoration-none text-primary light-300">
+                              Read more <i class='bx bxs-hand-right ms-1'></i>
+                          </span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="row">
+            <div class="btn-toolbar justify-content-center pb-4" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-secondary text-white">Ant.</button>
+                </div>
+                <div class="btn-group me-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn btn-light">1</button>
+                </div>
+                <div class="btn-group me-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn btn-secondary text-white">2</button>
+                </div>
+                <div class="btn-group" role="group" aria-label="Third group">
+                    <button type="button" class="btn btn-secondary text-white">Sig.</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Our Work -->
+
+    <!-- Start Feature Work -->
+    <section class="bg-light py-5">
+        <div class="feature-work container my-4">
+            <div class="row d-flex d-flex align-items-center">
+                <div class="col-lg-5">
+                    <h3 class="feature-work-title h4 text-muted light-300">Trabajos Destacados</h3>
+                    <h1 class="feature-work-heading h2 py-3 semi-bold-600">Transformá tus ventas con nosotros</h1>
+                    <p class="feature-work-body text-muted light-300">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+                        ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                    </p>
+                    <p class="feature-work-footer text-muted light-300">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="col-lg-6 offset-lg-1 align-left">
+                    <div class="row">
+                        <a class="col" data-type="image" data-fslightbox="gallery" href="./assets/img/feature-work-1-large.jpg">
+                            <img class="img-fluid" src="./assets/img/feature-work-1.jpg">
+                        </a>
+                        <a class="col" data-type="image" data-fslightbox="gallery" href="./assets/img/feature-work-2-large.jpg">
+                            <img class="img-fluid" src="./assets/img/feature-work-2.jpg">
+                        </a>
+                    </div>
+                    <div class="row pt-4">
+                        <a class="col" data-type="image" data-fslightbox="gallery" href="./assets/img/feature-work-3-large.jpg">
+                            <img class="img-fluid" src="./assets/img/feature-work-3.jpg">
+                        </a>
+                        <a class="col" data-type="image" data-fslightbox="gallery" href="./assets/img/feature-work-4-large.jpg">
+                            <img class="img-fluid" src="./assets/img/feature-work-4.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Feature Work -->
+
+
+<!-- Start Footer -->
+<footer class="footer-bg pt-4">
+    <div class="container">
+        <div class="row py-3">
+
+            <div class="col-lg-3 col-10 offset-1 offset-md-0 col-md-12 text-center text-md-start">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/img/logo300x300.png" alt="logo" width="40" class="logo"  >
+                    <span class="text-light h6">Business &</span><span class="text-dark h6 semi-bold-600"> Travel English</span>
+                </a>
+                <p class="text-light my-lg-4 pb-1 pb-md-2 text-center text-md-start">
+                    El Ingles es la Herramienta es tu proximo paso hacia el Futuro. 
+                </p>
+                <ul class="list-inline footer-icons light-300 text-center">
+                    <li class="list-inline-item">
+                        <a class="text-light" target="_blank" href="http://facebook.com/">
+                            <i class='bx bxl-facebook-circle bx-md' ></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                            
+                            <i class='bx bxl-instagram-alt bx-md' ></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                            
+                            <i class='bx bxl-whatsapp bx-md' ></i>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                <h3 class="h4 pb-lg-3 text-light light-300 text-center text-md-start"> Navegacion del Sitio </h2>
+                    <ul class="list-unstyled text-light light-300 text-center text-md-start">
+                        <li class="pb-3">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" 
+                            href="index.html"> Inicio </a>
+                        </li>
+                        <li class="pb-3">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+                            href="about.html">Modalidades</a>
+                        </li>
+                        <li class="pb-3">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+                            href="work.html">Nuestros Estudiantes </a>
+                        </li>
+                        <li class="pb-3">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" 
+                            href="pricing.html"> Sobre Nosotros </a>
+                        </li>
+                        <li class="pb-3">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+                            href="contact.html">Contactanos</a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4 text-center text-md-start">
+                <h2 class="h4 pb-lg-3 text-light light-300 "> Contactanos: </h2>
+                <ul class="list-unstyled text-light light-300">
+                    <li class="pb-4">
+                        <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" 
+                        href="tel:+5491126941700">+5491126941700</a>
+                    </li>
+                    <li class="pb-2">
+                        <i class='bx-fw bx bx-mail-send bx-xs'></i>
+                        <a class="text-decoration-none text-light py-1" href="mailto:info@clasesdeinglesparticular.com.ar">info@clasesdeinglesparticular.com.ar </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-4 my-sm-0 mt-4 text-center text-md-start">
+                <h2 class="h4 pb-lg-3 text-light light-300"> Visitanos: </h2>
+                <ul class="list-unstyled text-light light-300">
+                    <li class="pb-2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.965793270001!2d-58.38716608535466!3d-34.60502648045921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5bbc294ad%3A0xa53c8410fee1a9ca!2sTalcahuano%20309%2C%20C1013%20AAG%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1621966088071!5m2!1ses-419!2sar" width="100%" height="200" style=" border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="w-100 footer-bg py-3">
+        <div class="container">
+            <div class="row pt-2">
+                <div class="col-lg-6 col-sm-12">
+                    <p class="text-lg-start text-center text-light light-300">
+                        © Copyright 2021 Business & Travel English. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <p class="text-lg-end text-center text-light light-300">
+                        Diseñado por <a rel="sponsored" class="text-decoration-none text-light" 
+                        href="" target="_blank"><strong> Pedro Nastasi</strong></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!-- End Footer -->
+
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Lightbox -->
+    <script src="assets/js/fslightbox.js"></script>
+    <script>
+        fsLightboxInstances['gallery'].props.loadOnlyCurrentSource = true;
+    </script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function() {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

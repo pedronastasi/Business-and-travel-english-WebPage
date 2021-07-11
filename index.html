@@ -1,0 +1,626 @@
+<!DOCTYPE html>     <!----- definición de html 5 -->          
+<html lang="es"> 	<!----- definición del lenguaje -->  
+					<!------Inicio del  HEAD -->
+<head>
+  <title>Clases de Ingles Particulares</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+	<!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom --> 
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+	<!----- icono para apple y safari --> 
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Favicon.png">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- iconos  -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+	    <!-- tipo de letra -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+		<!-- carga CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<!-----
+.text-primary  		azul
+.text-secondary		gris
+.text-success		verde
+.text-danger		rojo
+.text-warning		amarillo
+.text-info			celeste
+.text-light			blanco
+.text-dark			negro
+.text-muted			gris oscuro
+.text-white			gris claro
+-->
+<!------------------------------------------------------------------ Fin del  HEAD -->
+<body>
+    <!-- Header 
+	nav = cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual 
+	o a otros documentos
+	-->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-dark shadow d-flex ">
+	
+	<!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+	navbar-light = texto negro de la letra
+	bg-white = fondo de color blanco
+	-->
+
+        <div class="container-fluid d-flex justify-content-between" >
+		
+            <a class="navbar-brand" href="index.html">
+			<!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->	
+                    
+                    <img src="./assets/img/logo300x300.png" alt="logo" width="60" class="logo"  >
+                    
+				<!--	bx bx-buildings = icono del logo de la web: 
+				http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+				https://boxicons.com/
+				-->
+                
+                <span class="text-dark h7 marca align-middle pl-md-5 ml-md-5 "> <b> Business &</b> </span>
+           <span class="text-light h7 marca2 align-middle pl-md-5"> <b>Travel English</b> </span></a>
+                
+			<!--	boton de hamburguesa --> 
+  	          <button class="navbar-toggler" 
+				type="button" data-bs-toggle="collapse" 
+				data-bs-target="#navbar-toggler-success" 
+				aria-controls="navbarSupportedContent" 
+				aria-expanded="false" 
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon">
+				</span>
+            </button>
+		<!------------------------------------------- Opciones del Menu		-->
+		<div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" 
+		id="navbar-toggler-success">
+		
+		<!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+		por un punto de interrupción principal.
+		flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+		d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+		directos en elementos flexibles
+		-->
+  		              <div class="flex-fill mb-2 ">
+				<!--	  mx=para clases que establecen tanto *-lefty*-right-->
+ 	                   <ul class="nav navbar-nav d-flex justify-content-lg-evenly text-center  text-dark fs-5">
+					<!--   .navbar-nav para una navegación ligera y de altura completa 
+					   (incluida la compatibilidad con menús desplegables).-->
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-secondary text-light  rounded-pill" href="index.html">Inicio</a>
+						<!-- px = padding y mx es el margin 
+						rounded-pill =genera ese boton con bordes redondeados rounded-circle-->	
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-secondary text-light rounded-pill" href="work.html"> Modalidades </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-secondary text-light  rounded-pill " href="pricing.html">Nuestros Estudiantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-secondary text-light rounded-pill"  href="about.html" >Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-secondary text-light  rounded-pill" href="contact.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+
+<!---------------------------------------------------------Fin de las opciones del menu
+------------------------------------------------------------ Inicio de los iconos del menu-->
+                <div class="navbar align-self-center d-flex">
+                    <a class="nav-link" href="#"><i class='bx bx-cart-alt bx-sm text-light bx-burst-hover' ></i></a>
+                    <a class="nav-link" href="#"><i class='bx bxs-bell-ring bx-sm bx-tada-hover text-light'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bxs-user-rectangle bx-sm text-light bx-spin-hover'></i></a>
+                    <a class="nav-link" href="#"><i class='bx bx-help-circle bx-flashing-hover bx-sm text-light' ></i></a>
+                    
+                    
+                   
+				    <!--	https://iconify.design/icon-sets/bx/-->
+                </div>
+            </div>
+        </div>
+    </nav>
+<!----------------------------------------------------------- Fin de los iconos del menu
+
+    <!- Close Header -->
+ <!----------------------------------------------------------- Fin del Header-->
+
+    <!-- Start Banner Hero -->
+            
+                <div id="index_banner" class="banner-vertical-center-index container-fluid">
+            
+                <!-- Start slider -->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" ></li>
+                        </ol>
+        <!-- class="active" Se requiere un elemento activo inicial
+        La .activeclase debe agregarse a una de las diapositivas. De lo contrario, el carrusel no será visible. -->
+                        
+                        <div class="carousel-inner">
+                    
+    <!-- Primer elemento del carrousel 
+    Ver: https://getbootstrap.com/docs/4.0/components/carousel/  -->				
+
+                       
+                        <!--typo-space-line = clase configurada en el css 
+                        display-3 = <H3> 
+                        Where property is one of:
+
+                            m - for classes that set margin
+                            p - for classes that set padding
+                            Where sides is one of:
+
+                            t - for classes that set margin-top or padding-top
+                            b - for classes that set margin-bottom or padding-bottom
+                            l - for classes that set margin-left or padding-left
+                            r - for classes that set margin-right or padding-right
+                            x - for classes that set both *-left and *-right
+                            y - for classes that set both *-top and *-bottom
+                            blank - for classes that set a margin or padding on all 4 sides of the element
+                            ejemplo: 
+                            <div class="mx-auto" style="width: 200px;">
+                            Centered element
+                            </div>
+                        
+                        -->
+                        <div  class="carousel-item active" >
+
+                            <div class="row d-flex justify-content-lg-start margin-top">
+                                <div class="banner-content col-lg-5 offset-lg-1 pt-0 pb-0 mt-lg-4  text-center">
+                                    <h1 class="banner-heading text-light display-2 mt-lg-5 mb-lg-4  pb-4 pb-md-0 fw-bolder">
+                                       Clases de Ingles a Distancia.
+                                    </h1>
+                                    <p class="banner-body text-light mt-5 pb-sm-1 mb-sm-5 text-lg-center fw-bold pb-xl-0">
+                                        Aprende Inglés, ¡Desde casa u oficina de trabajo! Clases de Ingles Online a Traves de Google Meets, Zoom , o Skype. 
+                                    </p>
+                                    <div class="col-lg-4 offset-lg-4 text-center pt-sm-2 mt-lg-0">
+                                        <a class="banner-button btn rounded-pill btn-primary btn-lg px-4 fs-sm-4" href="#" role="button">Precios</a>
+                                        </div>
+                                </div>
+                                
+                            </div>
+                            
+
+                        </div>
+    <!----------------------------------------------------------- Nuevo ITem del Carrousel-->
+
+                        <div class="carousel-item">
+
+                            <div class="row d-flex justify-content-lg-start margin-top">
+                                <div class="banner-content col-lg-5 offset-lg-1 my-md-5 pb-5 text-center">
+                                    <h1 class="banner-heading text-light fw-bolder display-5 my-md-4 pb-4 pb-md-0 light-300">
+                                        !Avanzá hacia el proximo Nivel en Tu Carrera Profesional!
+                                    </h1>
+                                    <p class="banner-body text-light mb-2 mt-2 my-md-1 pb-0 pb-md-4 pt-3 pt-md-2 py-md-1 text-lg-center fw-bold ">
+                                        Sabemos lo que nesesitas ! Es por ello que Nos enfocamos en el Ingles Tecnico que nesesitas para tu profesion!
+                                    </p>
+                                    <div class="col-lg-4 offset-lg-4 text-center pt-0 pb-4 pt-md-4 my-md-1">
+                                        <a class="banner-button btn rounded-pill btn-primary btn-lg px-4 fs-sm-4" href="#" role="button">Metodologia</a>
+                                        </div>
+                                </div>
+                                
+                            </div>
+                            
+
+                        </div>
+    <!----------------------------------------------------------- Nuevo ITem del Carrousel-->					
+                        <div class="carousel-item">
+
+                            <div class="row d-flex justify-content-lg-start margin-top">
+                                <div class="banner-content col-lg-5 offset-lg-1 py-0 py-md-3 pt-md-5 pb-5 text-center">
+                                    <h1 class="banner-heading text-light display-4 mt-lg-2  pb-5 py-lg-3 light-300 fw-bolder">
+                                    !Lográ finalmente Comunicarte cuando viajas al exterior!
+                                    </h1>
+                                    <p class="banner-body text-light my-2 my-md-0 mb-md-1 pb-0 pb-md-4  pt-md-1   text-lg-center fw-bold">
+                                        Sabemos lo que nesesitas !  <br> Nos enfocamos en el Ingles que nesesitas para tu profesion!
+                                    </p>
+                                    <div class="col-lg-4 offset-lg-4 text-center my-0 my-md-0  pt-0 py-md-3 ">
+                                        <a class="banner-button btn rounded-pill btn-primary btn-lg px-4 fs-sm-4" href="#" role="button"> Mas Info </a>
+                                     </div>
+                                </div>
+                                
+                            </div>
+                            
+
+                        </div>
+                        
+                    </div>
+
+            
+        </div>
+    </div>
+    <!-- End Banner Hero -->
+	
+    <!-- Start Service -->
+    <section class="service-wrapper py-3">
+        <div class="container-fluid pb-3">
+            <div class="row">
+                <h2 class="h1 text-center col-12 pt-5  pb-0 semi-bold-600 display-3"> Modalidades de Clases </h2>
+                <div class="service-header offset-md-2 offset-lg-2 col-1 col-md-1 px-1 align-text-top text-end light-300">
+                    <i class='bx bx-book-reader display-3 '></i>
+                </div>
+                <div class="service-heading col-10 col-lg-6 col-md-6 text-center float-end offset-md-0 align-text-top light-300  ">
+                    <h3 class=" pb-4 typo-space-line fs-5 fs-md-4">Los mejores profesores para enseñarte en la comodidad de tu Casa u Oficina.</h3>
+                </div>
+            </div>
+            <p class="service-footer col-10 offset-1 offset-md-3 col-lg-9 offset-lg-3 text-start pb-3 text-muted px-2 fs-md-5 fs-6">
+               No Busques mas Profesor, Este es el Lugar Idoneo!.
+            </p>
+        </div>
+
+        <div class="service-tag py-5 bg-primary">
+            <div class="col-md-12">
+                <ul class="nav d-flex justify-content-center">
+                    <li class="nav-item mx-lg-4 ">
+                        <a class="filter-btn nav-link btn-outline-secondary active shadow rounded-pill text-light px-4 
+						light-300 fs-5 fs-md-4" href="#" data-filter=".todo">Todo</a>
+				<!-- btn-outline = boton transparente -->
+                    </li>
+                    <li class="nav-item mx-lg-4 ">
+                         <a class="filter-btn nav-link btn-outline-secondary rounded-pill text-light px-4 light-300 fs-5 fs-md-4"
+                        href="#" data-filter=".grupal"> Clases Grupales </a>
+                    </li>
+                    <li class="filter-btn nav-item mx-lg-4 ">
+                        <a class="filter-btn nav-link btn-outline-secondary rounded-pill text-light px-4 light-300 fs-5 fs-md-4" 
+						href="#" data-filter=".particular">Clases Particulares </a>
+                    </li>
+                    <li class="nav-item mx-lg-4 ">
+                        <a class="filter-btn nav-link btn-outline-secondary rounded-pill text-light px-4 light-300 fs-5 fs-md-4" 
+						href="#" data-filter=".examen"> Clases  para Rendir Examenes </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container  overflow-hidden py-2">
+        <div class="row gy-4 gx-sm-3 gx-lg-5 gy-lg-5 pb-3 projects">
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-4 col-md-4 col-sm-6 todo particular">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-3 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-04.jpg" alt="Card image" height="342px" width="100%">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300"> Particular - Online </span>
+                            <p class="card-text"> Clases por Zomm  Google Meets</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Comienzan los trabajos recientes -->
+            <div class="col-xl-4 col-md-4 col-sm-6 todo particular">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-3 m-sm-0">
+                    <img class="service card-img" src="./assets/img/services-01.jpg" alt="Card image" height="342px" width="800px" >
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300"> Particular - Presencial </span>
+                            <p class="card-text"> Toda la Atencion del Profesor en Ti! </p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-4 col-md-4 col-sm-6 todo grupal">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-3 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-02.jpg" alt="Card image" height="342px" width="800px">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300"> Grupal - Presencial </span>
+                            <p class="card-text"> Grupos de Maximo 05 Personas </p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-4 col-md-4 col-sm-6 todo grupal">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-3 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-03.jpg" alt="Card image" height="342px" width="800px">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300"> Grupal - Online </span>
+                            <p class="card-text"> Grupos de Maximo 05 Personas </p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+           
+            <!-- Start Recent Work -->
+            <div class="col-xl-4 col-md-4 col-sm-6 todo examen">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-3 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-05.jpg" alt="Card image" height="342px" width="800px"> 
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300"> Examenes Internacionales</span>
+                            <p class="card-text"> FCE Test, Toefl Test, Ielt Test, Entre Otros </p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-4 col-md-4 col-sm-6 todo grupal">
+                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-3 m-sm-0">
+                    <img class="card-img" src="./assets/img/services-06.jpg" alt="Card image" height="342px" width="800px">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300"> In-Company Students </span>
+                            <p class="card-text"> Cleses en tu Empresa</p>
+                        </div>
+                    </div>
+                </a>
+            </div><!-- End Recent Work -->
+
+    
+
+        </div>
+    </section>
+    <!-- End Service -->
+
+
+
+
+
+
+    <!-- Start View Work -->
+    <section class="bg-primary">
+        <div class="container py-5">
+            <div class="row d-flex justify-content-center text-center">
+                <div class="col-lg-2 col-12 text-light align-items-center">
+                    
+                    <i class='display-1 bx bx-book-bookmark'></i>
+                </div>
+                <div class="col-lg-7 col-12 text-light pt-2">
+                    <h3 class="light-300 fs-1"> Clases Dinamicas e Interectivas</h3>
+                    <p class="light-300 fs-4"> Aprendes y te Divertis </p>
+                </div>
+                <div class="col-lg-3 col-12 pt-4">
+                    <a href="#" class="btn btn-secondary rounded-pill text-light btn-block shadow px-4 py-2 fs-sm-3 fs-3"> Contactanos </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End View Work -->
+
+    <!-- Start Recent Work -->
+    <section class="py-5 mb-5">
+        <div class="container">
+            <div class="recent-work-header row text-center pb-5">
+                <h2 class="col-md-6 m-auto h2 semi-bold-600 py-5 fs-1"> Nuestros Estudiantes </h2>
+            </div>
+            <div class="row g-1 g-lg-5 mb-4">
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden mx-3">
+                        <img class="recent-work-img card-img" src="./assets/img/recent-work-01.jpg" alt="Card image" height="342px" >
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300 text-light"> Clases a Distancia </h3>
+                                <p class="card-text text-light"> A traves de Zoom , Google Meets </p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden mx-3">
+                        <img class="recent-work-img card-img" src="./assets/img/recent-work-02.jpg" alt="Card image" height="342px" >
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300 text-light"> Clases Presenciales </h3>
+                                <p class="card-text text-light"> Clases a Domicilio </p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden mx-3">
+                        <img class="recent-work-img card-img" src="./assets/img/recent-work-03.jpg" alt="Card image" height="342px" >
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300 text-light"> Clases Particulares </h3>
+                                <p class="card-text text-light"> Rendí Examenes internacionales</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden mx-3">
+                        <img class="recent-work-img card-img" src="./assets/img/recent-work-04.jpg" alt="Card image" height="342px" >
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300 text-light"> Clases In-company </h3>
+                                <p class="card-text text-light"> Desde la Comodidad de tu Oficina </p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden mx-3">
+                        <img class="recent-work-img card-img" src="./assets/img/recent-work-05.jpg" alt="Card image" height="342px" >
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300 text-light"> Clases In-Company </h3>
+                                <p class="card-text text-light"> Desarrollate a Nivel Profesional</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+                <!-- Start Recent Work -->
+                <div class="col-md-4 mb-3">
+                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden mx-3">
+                        <img class="recent-work-img card-img" src="./assets/img/recent-work-06.jpg" alt="Card image" height="342px" >
+                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                <h3 class="card-title light-300 text-light" > Clases Online </h3>
+                                <p class="card-text text-light">Clases Particulares </p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- End Recent Work -->
+
+            </div>
+        </div>
+    </section>
+    <!-- End Recent Work -->
+
+
+
+    <!-- Start Footer -->
+    <footer class="footer-bg pt-4">
+        <div class="container">
+            <div class="row py-3">
+
+                <div class="col-lg-3 col-10 offset-1 offset-md-0 col-md-12 text-center text-md-center text-lg-start">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./assets/img/logo300x300.png" alt="logo" width="40" class="logo"  >
+                        <span class="text-light h6">Business &</span><span class="text-dark h6 semi-bold-600"> Travel English</span>
+                    </a>
+                    <p class="text-light my-lg-4 pb-1 pb-md-2 text-center text-center text-md-center text-lg-start">
+                        El Ingles es la Herramienta es tu proximo paso hacia el Futuro. 
+                    </p>
+                    <ul class="list-inline footer-icons light-300 text-center">
+                        <li class="list-inline-item">
+                            <a class="text-light" target="_blank" href="http://facebook.com/">
+                                <i class='bx bxl-facebook-circle bx-md' ></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
+                                
+                                <i class='bx bxl-instagram-alt bx-md' ></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                
+                                <i class='bx bxl-whatsapp bx-md' ></i>
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300 text-center text-md-start"> Navegacion del Sitio </h2>
+                        <ul class="list-unstyled text-light light-300 text-center text-md-start">
+                            <li class="pb-3">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" 
+								href="index.html"> Inicio </a>
+                            </li>
+                            <li class="pb-3">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="about.html">Modalidades</a>
+                            </li>
+                            <li class="pb-3">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="work.html">Nuestros Estudiantes </a>
+                            </li>
+                            <li class="pb-3">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" 
+								href="pricing.html"> Sobre Nosotros </a>
+                            </li>
+                            <li class="pb-3">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="contact.html">Contactanos</a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4 text-center text-md-start">
+                    <h2 class="h4 pb-lg-3 text-light light-300 "> Contactanos: </h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-4">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="tel:+5491126941700">+5491126941700</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i>
+                            <a class="text-decoration-none text-light py-1" href="mailto:info@clasesdeinglesparticular.com.ar">info@clasesdeinglesparticular.com.ar </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4 text-center text-md-start">
+                    <h2 class="h4 pb-lg-3 text-light light-300"> Visitanos: </h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.965793270001!2d-58.38716608535466!3d-34.60502648045921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5bbc294ad%3A0xa53c8410fee1a9ca!2sTalcahuano%20309%2C%20C1013%20AAG%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1621966088071!5m2!1ses-419!2sar" width="100%" height="200" style=" border-radius: 15px;" allowfullscreen="" loading="lazy"></iframe>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 footer-bg py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © Copyright 2021 Business & Travel English. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Diseñado por <a rel="sponsored" class="text-decoration-none text-light" 
+							href="" target="_blank"><strong> Pedro Nastasi</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+   <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.todo',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function() {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>	
+ 
+   
+</body>
+
+</html>
